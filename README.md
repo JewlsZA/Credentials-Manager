@@ -17,7 +17,15 @@ a Browser windows should open where you can interact with the program !
 If the browser does not open type http://localhost:3000/ in your browser
 
 
-# Getting Started with Credential Manager
+# What is Credential Manager?
 
-Interfacing with the program for the first time it is recommended to create a new user. User privilages can only be assigned by a admin. 
-The default admin account you can use to perform such functions is usr: julian psw: 123
+The programs is intended to be used internally by large companies with multiple departments and sub department to store company login credentials like Facebook and Instagram accounts. With the use of JWT users only have access to resources withing their department. Furthermore there are 3 different types of users, namely regular users, managers and admins. Regular users can access and create credentials, managers can do all the above and edit credentials where admins can also assign user departments and permissions.
+
+
+# How credentials Manager works
+
+The frontend is written in React and backend in Express. MongoDB is used as prefered Database and JWT is user for authentications. All database communications is handled by the backend. I removed the database connection information for Github public posting.
+
+# Program limitations
+
+Program does not validate user text inputs
